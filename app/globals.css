@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap');
+
+:root {
+  --bg-primary: #0B0D17;
+  --bg-secondary: #111827;
+  --text-primary: #ffffff;
+  --text-muted: #ffffff70;
+  --text-dim: #ffffff40;
+  --border-subtle: #ffffff0a;
+  --orange: #FF6B35;
+  --green: #00C9A7;
+  --purple: #845EC2;
+  --pink: #FF6F91;
+  --blue: #0081CF;
+  --yellow: #FFC75F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(160deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 8px;
+  accent-color: var(--orange);
+}
+
+::selection {
+  background: var(--orange);
+  color: white;
+}
+
+/* Smooth page transitions */
+main {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
